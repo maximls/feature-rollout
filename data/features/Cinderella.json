@@ -6,7 +6,7 @@
     "US": { "launched": true },
     "CA": { "launched": true },
     "GB": { "launched": true },
-    "DE": { "launched": false },
+    "DE": { "launched": true },
     "FR": { "launched": false },
     "AU": { "launched": true },
     "JP": { "launched": false },
