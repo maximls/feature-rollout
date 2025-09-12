@@ -58,7 +58,7 @@ You can use either:
 
 **Regional Groups**: Use regional identifiers
 - `"LATAM": { "launched": true }` - Covers 46 Latin American countries
-- `"AFRICA": { "launched": false }` - Covers 49 African countries  
+- `"AFRICA": { "launched": false }` - Covers 49 African countries
 - `"EUROPE": { "launched": true }` - Covers 24 European countries
 - `"AAP": { "launched": false }` - Covers 5 Asia-Pacific countries
 - `"MENA": { "launched": true }` - Covers 15 Middle East & North Africa countries
@@ -149,7 +149,7 @@ This project is ready to deploy on GitHub Pages:
 
 The project includes:
 - `.nojekyll` file to bypass Jekyll processing
-- `_config.yml` with GitHub Pages configuration  
+- `_config.yml` with GitHub Pages configuration
 - All relative paths for proper hosting
 
 ### Local Development
@@ -191,7 +191,7 @@ The application uses versioned JavaScript and CSS files. If you make changes to 
 
 - **Interactive World Map**: Click and hover over countries for details
 - **Feature Selector**: Dropdown to switch between different features
-- **Progress Tracking**: Visual progress bar showing MyAlpha rollout percentage  
+- **Progress Tracking**: Visual progress bar showing MyAlpha rollout percentage
 - **Feature Descriptions**: Detailed descriptions displayed for each feature
 - **Tooltips**: Show country names, codes, MyAlpha IDs, and launch status
 - **Responsive Design**: Works on desktop and mobile devices
@@ -200,7 +200,7 @@ The application uses versioned JavaScript and CSS files. If you make changes to 
 ## Troubleshooting
 
 ### Feature Not Appearing
-- Ensure the JSON file is valid and properly formatted
+- Ensure the JSON file is valid and properly formatted.
 - Check that the filename is added to `data/features/index.json`
 - Verify the JSON follows the required schema (name and countries are required)
 
