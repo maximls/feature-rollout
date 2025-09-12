@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Launch Visualization</title>
+    <link rel="stylesheet" href="styles/main.css?v=11">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <h1>MyAlpha Features Rollout</h1>
+        </header>
+
+        <div class="controls-grid">
+            <div class="control-card">
+                <div class="feature-selector">
+                    <label for="feature-select">Feature</label>
+                    <select id="feature-select">
+                        <option value="">Loading features...</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="legend-card">
+                <div class="legend">
+                    <div class="legend-pill launched">
+                        <span class="pill-color"></span>
+                        <span class="pill-text">Launched</span>
+                    </div>
+                    <div class="legend-pill myalpha">
+                        <span class="pill-color"></span>
+                        <span class="pill-text">MyAlpha Countries</span>
+                    </div>
+                    <!-- <div class="legend-pill not-launched">
+                        <span class="pill-color"></span>
+                        <span class="pill-text">Not Launched</span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="description-card" id="description-card" style="display: none;">
+            <div class="description-header">
+                <h3>Feature Description</h3>
+            </div>
+            <div class="description-content" id="description-content">
+                Select a feature to view its description.
+            </div>
+        </div>
+
+        <div class="progress-card">
+            <div class="progress-header">
+                <span class="progress-label" id="progress-feature-name">MyAlpha Rollout Progress</span>
+                <span class="progress-stats" id="progress-stats">Select a feature to view progress</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+                </div>
+                <div class="progress-percentage" id="progress-percentage">0%</div>
+            </div>
+        </div>
+
+        <main>
+            <div id="loading" class="loading">Loading map data...</div>
+            <div class="map-card">
+                <div id="map-container">
+                    <svg id="world-map"></svg>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts/data-loader.js?v=33"></script>
+    <script src="scripts/map-renderer.js?v=32"></script>
+    <script src="scripts/main.js?v=13"></script>
+</body>
+</html>

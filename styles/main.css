@@ -1,0 +1,339 @@
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* CSS Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #F9FAFB;
+    color: #6B7280;
+    line-height: 1.6;
+}
+
+/* Layout & Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+/* Typography */
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1C2A39;
+    margin-bottom: 32px;
+}
+
+/* Page Header */
+.page-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/* Controls Grid */
+.controls-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.control-card,
+.legend-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    border: 1px solid #E5E7EB;
+}
+
+/* Feature Selector */
+.feature-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feature-selector label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1C2A39;
+}
+
+.feature-selector select {
+    padding: 12px 16px;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    background: white;
+    font-size: 14px;
+    color: #6B7280;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='%236B7280' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 12px;
+    padding-right: 40px;
+}
+
+.feature-selector select:hover {
+    border-color: #D1D5DB;
+}
+
+.feature-selector select:focus {
+    outline: none;
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Legend Pills */
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.legend-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    background: #F3F4F6;
+    border: 1px solid #E5E7EB;
+}
+
+.pill-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.pill-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.legend-pill.launched .pill-color {
+    background-color: #16A34A;
+}
+
+.legend-pill.myalpha .pill-color {
+    background-color: #DC2626;
+}
+
+.legend-pill.not-launched .pill-color {
+    background-color: #D1D5DB;
+}
+
+/* Description Card */
+.description-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    border: 1px solid #E5E7EB;
+}
+
+.description-header h3 {
+    margin: 0 0 16px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.description-content {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6B7280;
+    margin: 0;
+}
+
+/* Progress Card */
+.progress-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    border: 1px solid #E5E7EB;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.progress-label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1C2A39;
+}
+
+.progress-stats {
+    font-size: 14px;
+    color: #6B7280;
+    font-weight: 500;
+}
+
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 12px;
+    background: #E5E7EB;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #2563EB, #1D4ED8);
+    border-radius: 6px;
+    transition: width 0.5s ease;
+}
+
+.progress-percentage {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2563EB;
+    min-width: 48px;
+    text-align: right;
+}
+
+/* Map Card */
+.map-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    border: 1px solid #E5E7EB;
+}
+
+/* Loading */
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #6B7280;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Map Container */
+main {
+    position: relative;
+}
+
+#map-container {
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#world-map {
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+}
+
+#world-map:active {
+    cursor: grabbing;
+}
+
+/* Map Countries */
+.country {
+    stroke: #ffffff;
+    stroke-width: 0.5px;
+    transition: all 0.2s ease;
+}
+
+.country:hover {
+    stroke-width: 1.5px;
+    stroke: #1C2A39;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    
+    .controls-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .progress-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .progress-bar-container {
+        gap: 12px;
+    }
+    
+    .legend {
+        justify-content: center;
+    }
+    
+    #map-container {
+        height: 400px;
+    }
+    
+    .control-card,
+    .legend-card,
+    .progress-card,
+    .map-card {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 16px;
+    }
+    
+    .legend {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .legend-pill {
+        justify-content: center;
+    }
+    
+    #map-container {
+        height: 300px;
+    }
+}
