@@ -200,7 +200,7 @@ The application uses versioned JavaScript and CSS files. If you make changes to 
 ## Troubleshooting
 
 ### Feature Not Appearing
-- Ensure the JSON file is valid and properly formatted.
+- Ensure the JSON file is valid and properly formatted
 - Check that the filename is added to `data/features/index.json`
 - Verify the JSON follows the required schema (name and countries are required)
 
