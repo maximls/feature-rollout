@@ -1,0 +1,23 @@
+{
+  "sanctionedCountries": [
+    "IR",
+    "KP", 
+    "SY",
+    "CU",
+    "VE",
+    "BY",
+    "MM",
+    "RU"
+  ],
+  "description": "US-sanctioned countries excluded from visualization",
+  "countries": {
+    "IR": "Iran",
+    "KP": "North Korea",
+    "SY": "Syria", 
+    "CU": "Cuba",
+    "VE": "Venezuela",
+    "BY": "Belarus",
+    "MM": "Myanmar",
+    "RU": "Russia"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "features": [
+    "Cinderella.json",
+    "Madagascar.json"
+  ],
+  "description": "List of available feature files. Template files starting with _ are ignored.",
+  "schema": {
+    "required": ["name", "countries"],
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Display name for the feature"
+      },
+      "description": {
+        "type": "string",
+        "description": "Detailed description of the feature"
+      },
+      "countries": {
+        "type": "object",
+        "description": "Country codes (ISO 2-letter) or regional identifiers mapped to launch status",
+        "patternProperties": {
+          "^([A-Z]{2}|[A-Z]+)$": {
+            "type": "object",
+            "required": ["launched"],
+            "properties": {
+              "launched": {
+                "type": "boolean",
+                "description": "Whether the feature is launched in this country"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

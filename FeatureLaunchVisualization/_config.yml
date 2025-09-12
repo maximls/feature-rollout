@@ -1,0 +1,24 @@
+title: MyAlpha Feature Launch Visualization
+description: Interactive world map visualization for MyAlpha feature rollout tracking
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-sitemap
+
+# GitHub Pages settings
+url: ""
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Include files
+include:
+  - .nojekyll
+
+# Exclude files
+exclude:
+  - README.md
+  - TODO.md
+  - CLAUDE.md
+  - .gitignore

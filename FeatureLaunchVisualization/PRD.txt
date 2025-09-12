@@ -1,0 +1,69 @@
+# Product Requirements Document: World Map Data Visualization Tool
+
+## Overview
+A web-based data visualization tool that displays an interactive world map, dynamically coloring countries based on launch status data from a JSON configuration file.
+
+## Product Objectives
+- Provide a clear visual representation of global launch status across countries
+- Enable quick identification of launched vs non-launched regions
+- Support data-driven decision making through intuitive geographic visualization
+
+## Core Features
+
+### Map Visualization
+- Display interactive world map with country boundaries
+- Color countries green when `launched: true` in JSON data
+- Maintain default/neutral coloring for countries with `launched: false` or missing data
+- Support pan and zoom functionality for detailed exploration
+
+### Data Integration
+- Accept JSON input with country-specific launch status data
+- Map JSON country identifiers to geographic boundaries
+- Handle missing or incomplete data gracefully
+- Support real-time data updates without full page refresh
+
+### User Interface
+- Clean, minimal interface focusing on the map visualization
+- Legend indicating color coding (green = launched, default = not launched)
+- Loading states during data fetch and map rendering
+- Responsive design for desktop and tablet viewing
+
+## Technical Requirements
+
+### Data Format
+JSON structure should support:
+```json
+{
+  "countries": {
+    "US": { "launched": true },
+    "CA": { "launched": true },
+    "DE": { "launched": false }
+  }
+}
+```
+
+### Performance
+- Initial map load time under 3 seconds
+- Smooth interactions (pan/zoom) with minimal lag
+- Efficient rendering for 190+ countries
+- Optimized for modern web browsers
+
+### Compatibility
+- Modern browsers (Chrome 90+, Firefox 88+, Safari 14+)
+- Responsive design for screen sizes 1024px and larger
+- Progressive enhancement for older browsers
+
+## Success Metrics
+- Map renders successfully with accurate country coloring
+- Users can easily distinguish between launched and non-launched countries
+- Tool loads and responds within acceptable performance thresholds
+- Data updates reflect immediately in the visualization
+
+## Future Considerations
+- Support for additional data properties beyond launch status
+- Multiple color schemes or data layers
+- Export functionality for generated visualizations
+- Integration with external data sources or APIs
+
+## Implementation Notes
+This tool is designed for integration with Claude Code and should follow modern web development practices with clean, maintainable code structure suitable for AI-assisted development workflows.
