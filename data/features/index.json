@@ -2,7 +2,8 @@
   "features": [
     "Cinderella.json",
     "Madagascar.json",
-    "Belle.json"
+    "Belle.json",
+    "Alladin.json"
   ],
   "description": "List of available feature files. Template files starting with _ are ignored.",
   "schema": {
