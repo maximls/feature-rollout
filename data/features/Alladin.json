@@ -49,7 +49,7 @@
     "ZA": { "launched": true },
     "EG": { "launched": false },
     "MA": { "launched": false },
-    "NG": { "launched": false },
+    "NG": { "launched": true },
     "KE": { "launched": true },
     "GH": { "launched": false },
     "TH": { "launched": false },
@@ -74,7 +74,7 @@
     "MM": { "launched": false },
     "KH": { "launched": false },
     "LATAM": { "launched": false },
-    "AFRICA": { "launched": false },
+    "AFRICA": { "launched": true },
     "MENA": { "launched": false},
     "EUROPE": { "launched": false },
     "AAP": { "launched": false }
