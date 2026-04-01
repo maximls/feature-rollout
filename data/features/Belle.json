@@ -17,7 +17,7 @@
     "DK": { "launched": false },
     "FI": { "launched": false },
     "CH": { "launched": false },
-    "AT": { "launched": false },
+    "AT": { "launched": true },
     "BE": { "launched": true },
     "IE": { "launched": false },
     "PT": { "launched": false },
