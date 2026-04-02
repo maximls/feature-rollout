@@ -73,7 +73,7 @@
     "MM": { "launched": false },
     "KH": { "launched": false },
     "LATAM": { "launched": false },
-    "AFRICA": { "launched": true },
+    "AFRICA": { "launched": false },
     "MENA": { "launched": false},
     "EUROPE": { "launched": false },
     "AAP": { "launched": false }
