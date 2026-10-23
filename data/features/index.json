@@ -3,7 +3,8 @@
     "Cinderella.json",
     "Madagascar.json",
     "Belle.json",
-    "Alladin.json"
+    "Alladin.json",
+    "React.json"
   ],
   "description": "List of available feature files. Template files starting with _ are ignored.",
   "schema": {
